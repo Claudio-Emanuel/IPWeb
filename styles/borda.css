@@ -1,11 +1,31 @@
-.borda{
-    border: 1;
-    border-color: gold;
-    border-radius: 2;
-}
 .fundo{
     background-color: rgb(0, 0, 0);
 }
 .borda2{
     border-radius: 40;
+}
+.titulo{
+    color:darkmagenta;
+    font-size: 30pt;
+    font-family: "Aclonica", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.resto{
+    color:gold;
+    font-size: 15pt;
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.titleNome{
+    color: aliceblue ;
+    font-size: 45pt;
+    font-family: "VT323", monospace;
+    font-style: normal;
+}
+#borda3{
+    border: 1;
+    border-color: gold;
+    border-radius: 2;
 }
