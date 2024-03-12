@@ -27,5 +27,5 @@
 #borda3{
     border-style: solid;
     border-color: gold;
-    border-radius: 4;
+    border-radius: 4px;
 }
