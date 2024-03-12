@@ -25,7 +25,7 @@
     font-style: normal;
 }
 #borda3{
-    border: 1;
+    border-style: solid;
     border-color: gold;
-    border-radius: 2;
+    border-radius: 4;
 }
