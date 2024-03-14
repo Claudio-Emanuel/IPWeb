@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Atividade 4: FORMULARIO</title>
+        <link rel="stylesheet" href="../styles/style_form.css">
+    </head>
+    <body>
+        <div id="form">
+            <h1> Cadastro de Usuário</h1>
+            <br>
+            <form action="http://191.252.62.149:8080/pweb/salvar.jsp" method="post">
+                Usuário:<br>
+                <input type="text" name="nome"><br>
+                <br>
+                Login:<br>
+                <input type="text" name="login"><br>
+                <br>
+                Email:<br>
+                <input type="text" name="email"><br>
+                <br>
+                Senha:<br>
+                <input type="password" name="senha"><br>
+                <br>
+                Confirmar Senha:<br>
+                <input type="password" name="csenha"><br>
+                <br>
+                Gênero:<br>
+                <input type="radio" name="sexo">Masculino<br>
+                <input type="radio" name="sexo">Feminino<br>
+                <input type="radio" name="sexo">Outro<br><input type="text" name="outro"><br>
+                <br>
+                Hobby(s):<br>
+                <input type="checkbox" name="interesses">Futebol<br>
+                <input type="checkbox" name="interesses">Ler<br>
+                <input type="checkbox" name="interesses">Cantar<br>
+                <input type="checkbox" name="interesses">Dançar<br>
+                <input type="checkbox" name="interesses">Estudar<br>
+                <input type="checkbox" name="interesses">Programar<br>
+                <br>
+                UF:<br>
+                <select name="estado">
+                    <option value=""></option>
+                    <option value="PI">PI</option>
+                    <option value="MA">MA</option>
+                    <option value="SP">SP</option>
+                    <option value="RJ">RJ</option>
+                    <option value="MG">MG</option>
+                </select><br>
+                <br>
+                Observações:<br>
+                <textarea>
+                </textarea><br>
+                <br>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </body>
+</html>
