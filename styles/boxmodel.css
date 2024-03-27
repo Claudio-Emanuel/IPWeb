@@ -1,0 +1,13 @@
+.quadro{
+    width: 300px;
+    border: 10px ;
+    border-radius: 7px;
+    background-color: antiquewhite;
+    padding: 20px;
+    margin: 10px;
+}
+.texto{
+    font-size: 20px;
+    color: darkred;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
