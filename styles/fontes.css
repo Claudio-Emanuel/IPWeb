@@ -1,0 +1,12 @@
+.fonteSerif{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+}
+.fonteSans-Serif{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+.fonteMonoSpace{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}

@@ -1,0 +1,30 @@
+.tituloPagina{
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 60px;
+    font-style: normal;
+    color:firebrick;
+  }
+p {
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 30px;
+    font-style: normal;
+  }
+
+.texto{
+    family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 30px;
+    font-style: normal;
+    color: darkcyan;
+    border-style:solid;
+    border-color: black;
+    width: 900px;
+}
+#estilo{
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-size:30px;
+  font-style: normal;
+}

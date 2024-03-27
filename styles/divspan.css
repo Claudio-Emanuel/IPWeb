@@ -1,0 +1,19 @@
+.div1{
+    background-color: antiquewhite;
+    width: 600px;
+}
+.div2{
+    background-color: darkslategray;
+    width: 600px;
+}
+.div3{
+    background-color: grey;
+    width: 600px
+}
+.borda{
+    border-style:double;
+    width: 600px;
+}
+div{
+    border: 1px solid;
+}
