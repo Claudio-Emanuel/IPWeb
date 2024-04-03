@@ -2,25 +2,27 @@ p{
     font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-body{
-    background-color:bisque;
-}
+
 .imglobby{
     border-radius: 40px;
 }
 .divdestino{
-    width: 400px; 
-    height: 300px;
+    width: 500px; 
+    height: 500px;
     background-color:aliceblue; 
     margin-left: 100px; 
     border-radius: 10px;
-    align-items: center;
-    text-align: center;
+    justify-content: center;
     display: flex;
     flex-direction: column;
 }
 .textop{
-    font-size: 10px;
+    font-size: 15px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: justify;
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #f9ab01;
 }
