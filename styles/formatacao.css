@@ -1,0 +1,45 @@
+body{
+    flex-direction: column;
+    display: flex;
+    background-color: darkslategrey;
+}
+article{
+    margin:10px;
+    width: 50%;
+    background-color: aliceblue;
+}
+aside{
+    width: 25%;
+    background-color: aliceblue;
+    
+}
+a{
+    margin-bottom: 10px; ;
+    font-size: 30px;
+    border-bottom-style:groove ;
+}
+nav{
+    width: 25%;
+    background-color: aliceblue;
+    align-items: center;
+    justify-content: center;
+}
+footer{
+    background-color: aliceblue;
+}
+.teg{
+    flex-direction: column;
+    display: flex;
+    height: 5rem;
+    background-color: aliceblue;
+    align-items: center;
+    justify-content: center;
+}
+.middle{
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+
+}
