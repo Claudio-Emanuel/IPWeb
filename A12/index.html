@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Atividade 12</title>
+    <script type="text/javascript">
+        function mostrarvalor(button){
+            const valor= button.parentElement;
+            const elemento= valor.querySelector('.pessoa_detalhes');
+            const nome= valor.getAttribute('data-nome');
+            const altura= valor.getAttribute('data-altura');
+            elemento.textContent=`Nome: ${nome} Altura ${altura}`
+            elemento.style.delay='block'
+        }
+    </script>
+    <script type="text/javascript">
+        function showvalor(componente){
+            const valor= li.parentElement;
+            const elemento= li.querySelector('.pessoa_detalhes');
+            const nome= li.getAttribute('data-nome');
+            const altura= li.getAttribute('data-altura');
+            elemento.textContent=`Nome: ${nome} Altura ${altura}`
+            elemento.style.delay='block'
+        }
+    </script>
+    <link rel="stylesheet" href="../styles/data.css">
+</head>
+<body>
+        <div class="pessoa"  data-idade="20" data-altura="1.70m" data-nome="Joao">
+            <p class="pessoa_detalhes"></p>
+            <button onclick="mostrarvalor(this)">Mostrar detalhes</button>
+        </div>
+        <div class="pessoa"  data-idade="30" data-altura="1.59m" data-nome="Maria">
+            <p class="pessoa_detalhes"></p>
+            <button onclick="mostrarvalor(this)">Mostrar detalhes</button>
+        </div>
+        <div class="pessoa"  data-idade="40" data-altura="1.90m" data-nome="José">
+            <p class="pessoa_detalhes"></p>
+            <button onclick="mostrarvalor(this)">Mostrar detalhes</button>
+        </div>
+        <ul>
+            <li class="pessoa"  data-idade="19" data-altura="1.79m" data-nome="claudio"><p class="pessoa_detalhes">claudio</p></li>
+            <li class="pessoa"  data-idade="22" data-altura="1.78m" data-nome="alan"><p class="pessoa_detalhes">alan</p></li>
+            <li class="pessoa"  data-idade="23" data-altura="1.83m" data-nome="jairo"><p class="pessoa_detalhes">jairo</p></li>
+        </ul>
+</body>
+</html>

@@ -1,0 +1,11 @@
+.pessoa{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.pessoa[data-idade=30]{
+    color:brown
+}
+.mostrar_detalhes{
+    display: none;
+}
