@@ -1,0 +1,57 @@
+.box{
+  position: relative;
+  left: 10px ;
+  top: 10px ;
+  width: 200px;
+  height: 200px;
+  background: red;
+  animation: myanimation 5s alternate infinite;
+}
+.box :hover{
+    border: solid 5px black;
+    transition: border 3s 2s;
+}
+.box_1{
+  position: relative;
+  left: 10px ;
+  top: 10px ;
+  width: 200px;
+  height: 200px;
+  margin-top: 20px;
+  animation: rotation 15s linear infinite;
+}
+
+@keyframes rotation{
+  0%{
+    background-color: burlywood;
+    rotate: 0deg;
+  }
+  25%{
+    rotate: 90deg;
+    background-color: chocolate;
+    animation-fill-mode: forwards;
+  }
+  50%{
+    rotate: 180deg;
+    background-color:cadetblue;
+  }
+  75%{
+    rotate: 270deg;
+    background-color:crimson;
+  }
+  100%{
+    rotate: 360deg;
+    background-color:burlywood;
+  }
+}
+@keyframes myanimation{
+  from {
+      left: 10px;
+  }
+
+  to{
+    left: 500px;
+    background: blue;
+    border-radius: 100px ;
+  }
+}
