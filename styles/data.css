@@ -9,3 +9,22 @@
 .mostrar_detalhes{
     display: none;
 }
+.pessoa::before{
+    content: attr(data-idade) ' - 'attr(data-nome)' - 'attr(data-altura);
+}
+.lista{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+.lista::before{
+    content: 'Nome: 'attr(data-nome) ' -  Idade:'attr(data-idade) ' -  CPF:' attr(data-cpf);
+}
+.lista[data-idade='19']:hover{
+    color: blue;
+}
+.lista[data-idade='22']:hover{
+    color: red;
+}
+.lista[data-idade='24']:hover{
+    color: red;
+}
