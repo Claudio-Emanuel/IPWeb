@@ -1,0 +1,46 @@
+
+.conteudo{
+    background: #dcdcdc;
+    border:2px solid blue;
+    margin-top: 10px;
+}
+.linha{
+    background: #FFEBCD;
+    border:2px solid black;
+}
+.coluna{
+    background: #87CEEB;
+    border: 2px solid black;
+}
+.container_img_1 {
+    max-width:600px;
+    max-height:350px;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    padding: 10px;
+}
+.container_img_2 {
+    max-width:500px;
+    max-height:250px;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    padding: 10px;
+}
+.container_img_3 {
+    max-width:500px;
+    max-height:300px;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    padding: 10px;
+}
+.container_img_4{
+    max-width:300px;
+    max-height:250px;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    padding: 10px;
+}
