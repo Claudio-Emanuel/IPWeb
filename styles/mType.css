@@ -1,0 +1,9 @@
+a{
+    color:red;
+    text-decoration: none;
+}
+.texto{
+    list-style:none;
+    display: flex;
+    justify-content: end;
+}
