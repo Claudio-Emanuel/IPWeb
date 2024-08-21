@@ -1,0 +1,18 @@
+.caixa{
+    background-color: rgb(201, 199, 199);
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+.profile{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2px;
+    border-top: solid 1px blue;
+    width: 50%;
+    height: 80%;
+    margin:5px;
+    align-items: center;
+    justify-content: center;
+}
