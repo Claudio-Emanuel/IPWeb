@@ -1,0 +1,23 @@
+.btn-primeiro{
+    background-color: #3A5999;
+    border: solid 1px black;
+    color: white;
+}
+.btn-primeiro:hover{
+    background-color: #2b457a;
+    color: white;
+}
+.btn-segundo{
+    background-color: #DD4A39;
+    border: solid 1px black;
+    color: white;
+    margin-bottom: 10px;
+}
+.btn-segundo:hover{
+    background-color: #b33b2e;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: #469FD0;
+}
