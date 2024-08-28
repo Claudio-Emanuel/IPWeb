@@ -1,0 +1,8 @@
+.btn-local{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-group button:hover{
+    background-color: gray;
+}
