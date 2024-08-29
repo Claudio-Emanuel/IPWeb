@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Projeto 2</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body style="background-color: gray; padding: 10px;">
+    <div style="background-color: white;">
+
+        <nav class="navbar navbar-expand-md" style=" display: flex;height: 100%;">
+            <div class="container-fluid" style="align-items: center;justify-content: center; flex-direction: row;" >
+                <button type="submit" class="btn btn-primary" style="background-color: #469FD0;border-color:#469FD0;margin: 5px;border-radius: 3px"><i class="bi bi-clock" style="margin-right: 3px;"></i>Pedidos Recentes</button>
+                <button type="submit" class="btn btn-primary" style="background-color: #469FD0;border-color:#469FD0;margin: 5px;border-radius: 3px"><i class="bi bi-file-earmark-text" style="margin-right: 3px;"></i>Enviar Cliente</button>
+                <button type="submit" class="btn btn-primary" style="background-color: #469FD0;border-color:#469FD0;margin: 5px;border-radius: 3px"><i class="bi bi-file-earmark-text" style="margin-right: 3px;"></i>Receber Pagamento</button>
+                <button type="submit" class="btn btn-primary" style="background-color: #469FD0;border-color:#469FD0;margin: 5px;border-radius: 3px"><i class="bi bi-file-earmark-text" style="margin-right: 3px;"></i>Todos os Pedidos</button>
+                <button type="submit" class="btn btn-primary" style="background-color: #469FD0;border-color:#469FD0;margin: 5px;border-radius: 3px"><i class="bi bi-file-earmark-fill" style="margin-right: 3px;"></i>Novo Pedido</button>
+                <button type="submit" class="btn btn-primary" style="background-color: #469FD0;border-color:#469FD0;margin: 5px;border-radius: 3px"><i class="bi bi-house-door-fill" style="margin-right: 3px;"></i>Página Principal</button>
+            </div>
+        </nav>
+        <hr>
+        <div style="width: 100%;display: flex; justify-content: space-between;padding: 5px;">
+            <h4 >Pesquisar Produtos</h3>
+            <div style="display: flex;justify-content: end;align-items: center">
+                <button type="button" class="btn btn-default" data-bs-dismiss="alert" aria-label="close" style="font-size: 20px;"><i class="bi bi-dash" ></i></button>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close" style="font-size: 10px;"></button>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <p style="font-weight: bold; margin: 5px;">Descrição</p>
+            <input type="text" style="border-color: #469FD0; margin: 5px;">
+        </div>
+        <hr>
+       
+        <button type="submit" class="btn btn-primary" style="background-color: #308abb;border-color:#469FD0;margin: 5px;border-radius: 3px"><i class="bi bi-search" style="margin: 3px"></i>Pesquisar</button>
+        <button type="submit" class="btn btn-primary" style="background-color: #308abb;border-color:#469FD0;margin: 3px"><i class="bi bi-arrow-clockwise" style="margin: 3px;"></i>Recarregar</button>
+        <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#login" style="background-color: #308abb;border-color:#469FD0;margin: 5px;border-radius: 3px"><i class="bi bi-file-earmark-fill" style="margin-right: 3px;"></i>Novo</button>
+        <div style="display: flex; justify-content: space-between;align-items: center;">
+            <div style="width: 500px;margin-top: 20px;margin-left: 10px;flex-direction: row; display: flex; ">
+            <select class="form-select" style="width: 200px;" id="inputGroupSelect01">
+                <option selected></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="3">4</option>
+                <option value="3">5</option>
+                <option value="3">6</option>
+                <option value="3">7</option>
+                <option value="3">8</option>
+                <option value="3">9</option>
+                <option value="3">10</option>
+              </select>
+                <p style="margin-left: 5px;">Registro por página</p>
+            </div>
+            <div style="display: flex;">
+                <p>Buscar:</p>
+                <input type="text" style="border-color: #469FD0; margin: 5px;">
+            </div>
+        </div>
+        <br>
+        <table class="table  table-hover table-condensed table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Descrição</th>
+                    <th>Situação</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>    
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Pizza</td>
+                    <td><button type="button" class="btn btn-success" data-bs-toggle="tooltip" data-bs-placement="top" style="height:30px;width: 60px;display: flex;justify-content: center;align-items: center;" title="O produto encontra-se ativo no momento não se pode alterar sua forma">
+                        ativo
+                    </button></td>
+                    <td><button type="button" class="btn btn-outline-dark" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver Detalhes" style="font-size: 15px;"><i class="bi bi-calendar3"></i></button>
+                       
+                    <button type="button" class="btn btn-outline-dark" data-bs-toggle="tooltip" data-bs-placement="top" title="Editar" style="font-size: 15px;"><i class="bi bi-pencil-square"></i></button>
+     
+     
+                    <button type="button" class="btn btn-outline-dark" data-bs-toggle="popover" data-bs-placement="left" data-bs-trigger="focus" title="Remover" data-bs-title="Deseja realmente remover esse registro" data-bs-content=""  style="font-size: 15px;"><i class="bi bi-trash3"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Refrigerante</td>
+                    <td><button type="button" class="btn btn-success" data-bs-toggle="tooltip" data-bs-placement="top" style="height:30px;width: 60px;display: flex;justify-content: center;align-items: center;" title="O produto encontra-se ativo no momento não se pode alterar sua forma">
+                        ativo
+                    </button></td>
+                    <td><button type="button" class="btn btn-outline-dark" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver Detalhes" style="font-size: 15px;"><i class="bi bi-calendar3"></i></button>
+                       
+                        <button type="button" class="btn btn-outline-dark" data-bs-toggle="tooltip" data-bs-placement="top" title="Editar" style="font-size: 15px;"><i class="bi bi-pencil-square"></i></button>
+       
+                        <button type="button" class="btn btn-outline-dark" data-bs-toggle="tooltip" data-bs-placement="top" title="Excluir" style="font-size: 15px;"><i class="bi bi-trash3"></i></button></td>
+                </tr>
+                <tr>
+                    <td >3</td>
+                    <td >Cajuína</td>
+                    <td><button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" style="height:30px;width: 60px;display: flex;justify-content: center;align-items: center;" title="O produto encontra-se inativo no momento não se pode alterar sua forma">
+                        inativo
+                    </button></td>
+                    <td><button type="button" class="btn btn-outline-dark" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver Detalhes" style="font-size: 15px;"><i class="bi bi-calendar3"></i></button>
+                       
+                        <button type="button" class="btn btn-outline-dark" data-bs-toggle="tooltip" data-bs-placement="top" title="Editar" style="font-size: 15px;"><i class="bi bi-pencil-square"></i></button>
+       
+                        <button type="button" class="btn btn-outline-dark" data-bs-toggle="popover"  data-bs-placement="top" title="Excluir" style="font-size: 15px;"><i class="bi bi-trash3"></i></button></td>
+                </tr>
+                <tr>
+                    <td >4</td>
+                    <td >Borda</td>
+                    <td><button type="button" class="btn btn-success" data-bs-toggle="tooltip" data-bs-placement="top" style="height:30px;width: 60px;display: flex;justify-content: center;align-items: center;" title="O produto encontra-se ativo no momento não se pode alterar sua forma">
+                        ativo
+                    </button>
+                    </td>
+                    <td>
+                     <button type="button" class="btn btn-outline-dark" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver Detalhes" style="font-size: 15px;"><i class="bi bi-calendar3"></i></button>
+                       
+                     <button type="button" class="btn btn-outline-dark" data-bs-toggle="tooltip" data-bs-placement="top" title="Editar" style="font-size: 15px;"><i class="bi bi-pencil-square"></i></button>
+       
+                     <button type="button" class="btn btn-outline-dark" data-bs-toggle="tooltip" data-bs-placement="top" title="Excluir" style="font-size: 15px;"><i class="bi bi-trash3"></i></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+     
+        <div class="modal fade" id="login" tabindex="-1" >
+         <div class="modal-dialog">
+             <div class="modal-content">
+                 <div class="modal-header" style="display: flex;">
+                     <h4 class="modal-title">Efetuar registro de um novo produto</h4>
+                     <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Fechar">
+                     </button>
+                 </div>
+     
+                 <div class="modal-body" style="display: flex;flex-direction: column;">
+                     <form action="">
+                         <h5>ID</h5>
+                         <input type="text" placeholder="ID" id="floatingInput" style=" width: 95%;margin-bottom: 10px;">
+                         <h5>Nome</h5>
+                         <input type="text" placeholder="Nome" id="floatingInput" style=" width: 95%;margin-bottom: 10px;">
+                         <h5>Preço</h5>
+                         <input type="text" placeholder="Preço" id="floatingInput" style=" width: 95%;margin-bottom: 10px;">
+                         <h5>Categoria</h5>
+                         <input type="text" placeholder="Categoria" id="floatingInput" style=" width: 95%;margin-bottom: 10px;">
+                         <h5>Situação</h5>
+                         <input type="text" placeholder="status" id="floatingInput" style=" width: 95%;margin-bottom: 10px;">
+                     </form>
+                     <div style="justify-content: end;display: flex;">
+                         <button type="submit" class="btn btn-primary" style="margin-left: 250px ; background-color: #469FD0;border-color: #308abb;">Registrar</button>
+                     </div>
+                 </div>
+             </div>
+         </div>
+        </div>
+    </div>
+
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+   <script>
+    const myModal = document.getElementById('myModal')
+    const myInput = document.getElementById('myInput')
+
+    myModal.addEventListener('shown.bs.modal', () => {
+        myInput.focus()
+    })
+   </script>
+  <script>
+   const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+   const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+   const popover = new bootstrap.Popover('.popover-dismiss', {
+   trigger: 'focus'})
+  </script>
+  <script>
+   const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+   const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+   </script>
+ 
+</body>
+</html>
