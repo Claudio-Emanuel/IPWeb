@@ -83,7 +83,13 @@
                     <button type="button" class="btn btn-outline-dark" data-bs-toggle="tooltip" data-bs-placement="top" title="Editar" style="font-size: 15px;"><i class="bi bi-pencil-square"></i></button>
      
      
-                    <button type="button" class="btn btn-outline-dark" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Deseja realmente remover esse registro" data-bs-content=""  style="font-size: 15px;"><i class="bi bi-trash3" data-bs-toggle="tooltip" data-bs-placement="top" title="Remover"></i></button>
+                    <button type="button" class="btn btn-outline-dark" data-bs-toggle="confirmation" 
+                       data-bs-trigger="focus" 
+                       data-bs-title="Excluir" 
+                       data-bs-content="Deseja realmente excluir esse item?" 
+                       data-btn-ok-label="Excluir" data-btn-ok-class="btn-danger"
+                       data-btn-cancel-label="Cancelar" data-btn-cancel-class="btn-default"
+                       style="font-size: 15px;"><i class="bi bi-trash3" data-bs-toggle="tooltip" data-bs-placement="top" title="Remover"></i></button>
                     </td>
                 </tr>
                 <tr>
@@ -96,7 +102,13 @@
                        
                         <button type="button" class="btn btn-outline-dark" data-bs-toggle="tooltip" data-bs-placement="top" title="Editar" style="font-size: 15px;"><i class="bi bi-pencil-square"></i></button>
        
-                        <button type="button" class="btn btn-outline-dark" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Deseja realmente remover esse registro" data-bs-content=""  style="font-size: 15px;"><i class="bi bi-trash3" data-bs-toggle="tooltip" data-bs-placement="top" title="Remover"></i></button></td>
+                        <button type="button" class="btn btn-outline-dark" data-bs-toggle="confirmation" 
+                       data-bs-trigger="focus" 
+                       data-bs-title="Excluir" 
+                       data-bs-content="Deseja realmente excluir esse item?" 
+                       data-btn-ok-label="Excluir" data-btn-ok-class="btn-danger"
+                       data-btn-cancel-label="Cancelar" data-btn-cancel-class="btn-default"
+                       style="font-size: 15px;"><i class="bi bi-trash3" data-bs-toggle="tooltip" data-bs-placement="top" title="Remover"></i></button></td>
                 </tr>
                 <tr>
                     <td >3</td>
@@ -108,7 +120,13 @@
                        
                         <button type="button" class="btn btn-outline-dark" data-bs-toggle="tooltip" data-bs-placement="top" title="Editar" style="font-size: 15px;"><i class="bi bi-pencil-square"></i></button>
        
-                        <button type="button" class="btn btn-outline-dark" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Deseja realmente remover esse registro" data-bs-content=""  style="font-size: 15px;"><i class="bi bi-trash3" data-bs-toggle="tooltip" data-bs-placement="top" title="Remover"></i></button></td>
+                     <button type="button" class="btn btn-outline-dark" data-bs-toggle="confirmation" 
+                       data-bs-trigger="focus" 
+                       data-bs-title="Excluir" 
+                       data-bs-content="Deseja realmente excluir esse item?" 
+                       data-btn-ok-label="Excluir" data-btn-ok-class="btn-danger"
+                       data-btn-cancel-label="Cancelar" data-btn-cancel-class="btn-default"
+                       style="font-size: 15px;"><i class="bi bi-trash3" data-bs-toggle="tooltip" data-bs-placement="top" title="Remover"></i></button></td>
                 </tr>
                 <tr>
                     <td >4</td>
@@ -122,7 +140,13 @@
                        
                      <button type="button" class="btn btn-outline-dark" data-bs-toggle="tooltip" data-bs-placement="top" title="Editar" style="font-size: 15px;"><i class="bi bi-pencil-square"></i></button>
        
-                     <button type="button" class="btn btn-outline-dark" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Deseja realmente remover esse registro" data-bs-content=""  style="font-size: 15px;"><i class="bi bi-trash3" data-bs-toggle="tooltip" data-bs-placement="top" title="Remover"></i></button>
+                     <button type="button" class="btn btn-outline-dark" data-bs-toggle="confirmation" 
+                       data-bs-trigger="focus" 
+                       data-bs-title="Excluir" 
+                       data-bs-content="Deseja realmente excluir esse item?" 
+                       data-btn-ok-label="Excluir" data-btn-ok-class="btn-danger"
+                       data-btn-cancel-label="Cancelar" data-btn-cancel-class="btn-default"
+                       style="font-size: 15px;"><i class="bi bi-trash3" data-bs-toggle="tooltip" data-bs-placement="top" title="Remover"></i></button>
                     </td>
                 </tr>
             </tbody>
@@ -161,7 +185,10 @@
 
 
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
+   <script src="path/to/jquery.js"></script>
+   <script src="path/to/popper.js"></script>
+   <script src="path/to/bootstrap.js"></script>
+   <script src="path/to/bootstrap-confirmation.js"></script>
    <script>
     const myModal = document.getElementById('myModal')
     const myInput = document.getElementById('myInput')
@@ -169,6 +196,12 @@
     myModal.addEventListener('shown.bs.modal', () => {
         myInput.focus()
     })
+   </script>
+   <script>
+      $('[data-toggle=confirmation]').confirmation({
+        rootSelector: '[data-toggle=confirmation]',
+     // other options
+   });
    </script>
   <script>
    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
