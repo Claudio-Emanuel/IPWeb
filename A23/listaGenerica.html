@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <script type="text/javascript">
+
+      var lista_generica = {}; 
+      lista_generica['frutas'] = [];
+      lista_generica['frutas'][0] = ['maçã'];
+      lista_generica['frutas'][1] = ['banana'];
+      lista_generica['frutas'][2] = ['laranja'];
+      lista_generica['frutas'][3] = ['melancia'];
+      lista_generica['frutas'][4] = ['manga'];
+
+      lista_generica['numeros'] = [100,88,39,87,3,52,98,1202];      
+
+      lista_generica['linguagens'] = [];
+
+          lista_generica['linguagens'][0] = 'Dart';
+          lista_generica['linguagens'][1] = 'PHP';
+          lista_generica['linguagens'][2] = 'Java';
+          lista_generica['linguagens'][3] = 'Pyton';
+          lista_generica['linguagens'][4] = 'Perl';
+    
+          function mostrarLing(){
+            lista_generica['linguagens'].forEach(function(item,index){
+                const container = document.getElementById('container');
+                container.innerHTML += (index) + ' - ' +item+ '<br>';
+            })
+        }
+        
+        function inserir() {
+            var indice = prompt('Insira um número que deseja consultar na lista');
+            alert(lista_generica['linguagens'][indice]);
+        }
+
+        function mostrarFrut(){
+            lista_generica['frutas'].forEach(function(item,index){
+                const container = document.getElementById('containerFrutas');
+                container.innerHTML += (index) + ' - ' +item+ '<br>';
+            });
+        }
+
+        function inserirFrut() {
+            var indice = prompt('Insira um número que deseja consultar na lista');
+            alert(lista_generica['frutas'][indice]);
+        }
+    </script>
+
+  
+</head>
+
+    <body>
+        <div id="container"></div>
+        <div style="flex-direction: column; display: flex ;width: 150px;">
+            <button onclick="mostrarLing()" style="margin: 10px;">Criar Array</button>
+            <button onclick="inserir()">Posiçao no Array</button>
+        </div>
+        <hr>
+        <div id="containerFrutas"></div>
+        <div style="flex-direction: column; display: flex ;width: 150px;">
+        <button onclick="mostrarFrut()" style="margin: 10px;">Criar Array</button>
+        <button onclick="inserirFrut()">Posiçao no Array</button>
+    </div>
+       
+
+    </body>
+
+
+</html>

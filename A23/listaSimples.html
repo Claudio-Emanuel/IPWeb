@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ListaSimpless</title>
+    <script type="text/javascript">
+        var frutas=['maca','abacaxi','pera','banana','laranja'];
+        var linguagens = [];
+
+            linguagens[0]= 'Java';
+
+            linguagens[1]= 'C++';
+
+            linguagens[2]= 'Python';
+
+            linguagens[3]= 'Ruby';
+
+            linguagens[4]= 'JavaScript';
+
+
+        function mostrarLing(){
+            linguagens.forEach(function(item,index){
+                const container = document.getElementById('container');
+                container.innerHTML += (index) + ' - ' +item+ '<br>';
+            })
+        }
+        
+        
+        function inserir() {
+            var indice = prompt('Insira um número que deseja consultar na lista');
+            alert(linguagens[indice]);
+        }
+
+        function mostrarFrut(){
+            frutas.forEach(function(item,index){
+                const container = document.getElementById('containerFrutas');
+                container.innerHTML += (index) + ' - ' +item+ '<br>';
+            });
+        }
+
+        function inserirFrut() {
+            var indice = prompt('Insira um número que deseja consultar na lista');
+            alert(frutas[indice]);
+        }
+
+    </script>
+</head>
+<body>
+    <div id="container"></div>
+    <div style="flex-direction: column; display: flex ;width: 150px;">
+        <button onclick="mostrarLing()" style="margin: 10px;">Criar Array</button>
+        <button onclick="inserir()">Posiçao no Array</button>
+    </div>
+    <hr>
+    <div id="containerFrutas"></div>
+    <div style="flex-direction: column; display: flex ;width: 150px;">
+        <button onclick="mostrarFrut()" style="margin: 10px;">Criar Array</button>
+        <button onclick="inserirFrut()">Posiçao no Array</button>
+    </div>
+</body>
+</html>

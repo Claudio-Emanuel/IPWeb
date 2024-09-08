@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulação de Layouts com Box Model</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+			color: white;
+            padding: 10px;
+            border: 1px solid black;
+            display: inline-block;
+            text-align: center;
+            line-height: 80px;
+        }
+    </style>
+	<script>
+        function clicar(){
+            var indice = prompt('Insira um posiçao de caixa')
+            var num= parseInt(indice)
+            alert('A cor da caixa de posicao '+num+' é '+lista_boxes[num].cor )
+        }
+    </script>
+</head>
+<body>
+    <button onclick="listaBox()">Listar Boxes</button>
+    <button onclick="clicar()">Verificar cor da Box</button>
+	
+
+	
+    <div id="containerBox"></div>
+   
+
+ 
+</body>
+	<script>
+	// Array genérico para criar várias caixas com estilos
+        var lista_boxes = [
+            { cor: 'red', conteudo: 'Box 1', tamanho: 100,redondo:5 },
+            { cor: 'green', conteudo: 'Box 2', tamanho: 50,redondo:10 },
+            { cor: 'blue', conteudo: 'Box 3', tamanho: 200,redondo:20 },
+            { cor: 'purple', conteudo: 'Box 4',  tamanho: 110,redondo:30 },
+            { cor: 'black', conteudo: 'Box 5',  tamanho: 140,redondo:40 },
+        ];
+
+
+// Função para instanciar uma box com base nas propriedades de cada item da lista
+        function criaBox(itemBox) {
+            var novaBox = document.createElement('div');// cria um elemento div em tempo de execução
+            novaBox.className = 'box'; // define a class .box
+            novaBox.style.backgroundColor = itemBox.cor;
+            novaBox.textContent = itemBox.conteudo;
+            novaBox.style.width = itemBox.tamanho + 'px'; // Define a largura com base na propriedade tamanho
+            novaBox.style.height = itemBox.tamanho + 'px'; // Define a altura com base na propriedade tamanho
+            novaBox.style.borderRadius = itemBox.redondo + 'px';
+            return novaBox;
+        }
+
+
+        function listaBox(){
+            var containerBox = document.getElementById('containerBox');
+            lista_boxes.forEach(function(itemBox) {// var a lista de box criando novos elementos
+                    var box = criaBox(itemBox);
+                    containerBox.appendChild(box);
+            });
+        }
+     
+
+
+	</script>
+</html>
